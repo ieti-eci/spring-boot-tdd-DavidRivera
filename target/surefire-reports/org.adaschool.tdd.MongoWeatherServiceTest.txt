@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: org.adaschool.tdd.MongoWeatherServiceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 5.604 s <<< FAILURE! - in org.adaschool.tdd.MongoWeatherServiceTest
+weatherReportIdNotFoundTest  Time elapsed: 0.156 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <org.adaschool.tdd.exception.WeatherReportNotFoundException> but was: <java.lang.RuntimeException>
+	at org.adaschool.tdd.MongoWeatherServiceTest.weatherReportIdNotFoundTest(MongoWeatherServiceTest.java:68)
+Caused by: java.lang.RuntimeException: Implement this method
+	at org.adaschool.tdd.MongoWeatherServiceTest.lambda$weatherReportIdNotFoundTest$0(MongoWeatherServiceTest.java:69)
+	at org.adaschool.tdd.MongoWeatherServiceTest.weatherReportIdNotFoundTest(MongoWeatherServiceTest.java:68)
+
+weatherReportIdFoundTest  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.RuntimeException: Implement this method
+	at org.adaschool.tdd.MongoWeatherServiceTest.weatherReportIdFoundTest(MongoWeatherServiceTest.java:59)
+
+createWeatherReportCallsSaveOnRepository  Time elapsed: 0.11 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+repository.save(
+    <any org.adaschool.tdd.repository.document.WeatherReport>
+);
+-> at org.adaschool.tdd.MongoWeatherServiceTest.createWeatherReportCallsSaveOnRepository(MongoWeatherServiceTest.java:47)
+Actually, there were zero interactions with this mock.
+
+	at org.adaschool.tdd.MongoWeatherServiceTest.createWeatherReportCallsSaveOnRepository(MongoWeatherServiceTest.java:47)
+

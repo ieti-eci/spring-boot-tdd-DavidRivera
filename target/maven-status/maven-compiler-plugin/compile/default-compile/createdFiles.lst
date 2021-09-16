@@ -1,0 +1,11 @@
+org\adaschool\tdd\repository\document\WeatherReport.class
+org\adaschool\tdd\TddApplication.class
+org\adaschool\tdd\repository\WeatherReportRepository.class
+org\adaschool\tdd\controller\weather\dto\WeatherReportDto.class
+org\adaschool\tdd\repository\document\GeoLocation.class
+org\adaschool\tdd\controller\weather\WeatherReportController.class
+org\adaschool\tdd\service\MongoWeatherService.class
+org\adaschool\tdd\exception\WeatherReportNotFoundException.class
+org\adaschool\tdd\controller\health\HealthController.class
+org\adaschool\tdd\controller\weather\dto\NearByWeatherReportsQueryDto.class
+org\adaschool\tdd\service\WeatherService.class
